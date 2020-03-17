@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyMaster1.Master.cs" Inherits="DemoWeb.MyMaster1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">    
+    </asp:ContentPlaceHolder>
+    <link href="Styles/StyleSheet1.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            position: fixed;
+            left: -3px;
+            top: 15px;
+            width: 1601px;
+            height: 57px;
+        }
+        .auto-style2 {
+            position: fixed;
+            left: 9px;
+            top: 115px;
+            width: 152px;
+            height:1000%;
+        }
+        .auto-style3 {
+            position: fixed;
+            left: 186px;
+            top: 120px;
+            width: 1372px;
+            height: 849px;
+        }
+        .auto-style4 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: -4px;
+            top: -6px;
+            margin-bottom: 14px;
+        }
+        .auto-style5 {
+            width: 148px;
+            height: 540px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div  class="auto-style1"> 
+<img src="Images/image1.png" class="auto-style4"/>
+</div>
+
+<div  class="auto-style2">
+<asp:Label ID="Label1" Style="color:red; " runat="server" Text="Label"></asp:Label>
+ <ul class="auto-style5">
+  <li><a href="#Home">Home</a></li>
+  <li><a href="AddEmp.aspx">Add Employee</a></li>
+  <li><a href="UpdateEmp.aspx">Update Details</a></li>
+  <li><a href="DeleteEmp.aspx">Delete Employee</a></li>
+  <li><a href="First.aspx">First</a></li>
+  <li><a href="Confirm.aspx">Confirm</a></li>
+</ul>
+</div>
+    
+<div style="background-color: orchid" class="auto-style3">
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:Button ID="Button1" runat="server" Text="Logout" OnClick="Button1_Click" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    
+</div>
+</body>
+</html>

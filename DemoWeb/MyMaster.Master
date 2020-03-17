@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyMaster.master.cs" Inherits="DemoWeb.MyMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">    
+    </asp:ContentPlaceHolder>
+    <link href="Styles/StyleSheet1.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            position: fixed;
+            left: -3px;
+            top: 15px;
+            width: 1601px;
+            height: 57px;
+        }
+        .auto-style2 {
+            position: fixed;
+            left: 9px;
+            top: 115px;
+            width: 152px;
+            height:1000%;
+        }
+        .auto-style3 {
+            position: fixed;
+            left: 189px;
+            top: 114px;
+            width: 1372px;
+            height: 849px;
+        }
+        .auto-style4 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: -4px;
+            top: -6px;
+            margin-bottom: 14px;
+        }
+        .auto-style5 {
+            width: 148px;
+            height: 540px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div  class="auto-style1"> 
+<img src="Images/image1.png" class="auto-style4"/>
+</div>
+
+<div  class="auto-style2">
+ <ul class="auto-style5">
+  <li><a href="Home.aspx">Home</a></li>
+  <li><a href="AboutUs.aspx">About Us</a></li>
+  <li><a href="Services.aspx">Services</a></li>
+</ul>
+</div>
+
+<div style="background-color: #FF00FF" class="auto-style3">
+
+    <form id="form1" runat="server">
+     
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+      
+    </form>
+    
+</div>
+</body>
+</html>
